@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_menu_Them"
+        android:title="Thêm Nhân Viên Mới"
+        />
+    <item
+        android:icon="@drawable/xoa"
+        android:id="@+id/main_menu_Thung_Rac"
+        android:title="Thùng Rác"
+        />
+</menu>

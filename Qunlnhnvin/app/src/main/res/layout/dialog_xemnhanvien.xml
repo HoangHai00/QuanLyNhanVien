@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#DFF9FB"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewDiaLog"
+        android:layout_width="320dp"
+        android:layout_height="340dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:textColor="#e74c3c"
+        android:id="@+id/textViewDialogTen"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="Tên" />
+
+    <TextView
+        android:textColor="#e74c3c"
+        android:id="@+id/textViewDiaLogSDT"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="Số điện thoại" />
+
+    <TextView
+        android:textColor="#e74c3c"
+        android:id="@+id/textViewDiaLogEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="Email" />
+
+    <TextView
+        android:textColor="#e74c3c"
+        android:id="@+id/textViewDiaLogDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:text="Địa Chỉ" />
+
+    <Button
+        android:background="#2ecc71"
+        android:id="@+id/buttonXong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xong" />
+</LinearLayout>

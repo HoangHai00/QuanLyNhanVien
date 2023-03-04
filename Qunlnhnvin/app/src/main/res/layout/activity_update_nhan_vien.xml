@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThemNhanVien"
+    android:background="#8ED2C9">
+    <TextView
+        android:textSize="40sp"
+        android:id="@+id/textViewTieuDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Update Nhân Viên"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:id="@+id/linearlayoutUpdateNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTieuDe">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewUpdateAnhNhanVien"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:textSize="10sp"
+                    android:id="@+id/buttonUpdateChupAnh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="1"
+                    android:text="Chụp Ảnh" />
+
+                <Button
+                    android:textSize="10sp"
+                    android:id="@+id/buttonUpdateChonAnh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_weight="1"
+                    android:text="Chọn ảnh" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearlayoutMota"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtUpdateTen"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Nhập họ và tên:"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtUpdateSDT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập số điện thoại:"
+                android:inputType="number"
+                android:textSize="15sp" />
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/edtUpdateEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Nhập email"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edtUpdateDiaChi"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Nhập địa chỉ:"
+                android:minHeight="48dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnUpdateXacNhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Xác Nhận"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdateHuy"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayoutUpdateNhanVien" />
+
+    <Button
+        android:id="@+id/btnUpdateHuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="100dp"
+        android:text="Hủy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayoutUpdateNhanVien" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
